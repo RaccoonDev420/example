@@ -23,12 +23,15 @@ public class ExampleApplication {
 	@Bean
 	public CommandLineRunner runner(){
 		return args -> {
+			/*
 			generateData();
 			User test = userDAO.findByEmail("fernando@email.com").get();
 			System.out.println(test.toString());
 			test.setName("Luis");
 			userDAO.save(test);
 			System.out.println(test);
+
+			 */
 		};
 	}
 
