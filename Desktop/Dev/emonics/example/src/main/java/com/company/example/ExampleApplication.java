@@ -10,6 +10,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.util.List;
 import java.util.Optional;
 
 @SpringBootApplication
@@ -28,7 +29,9 @@ public class ExampleApplication {
 	public CommandLineRunner runner(){
 		return args -> {
 
-			generateData();
+			//generateData();
+			List<Phone> phones = (List<Phone>) phoneDAO.findAll("modelName:asc", "brand:Apple%,price>900%,");
+			System.out.println(phones);
 			/*
 			User test = userDAO.findByEmail("fernando@email.com").get();
 			System.out.println(test.toString());
