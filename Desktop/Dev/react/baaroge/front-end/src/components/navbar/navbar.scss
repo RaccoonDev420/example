@@ -1,0 +1,52 @@
+@import "../../variables.scss";
+.logoImage{
+    height: 100%;
+}
+.logo{
+    height: 72.222px;
+}
+.col-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+.right{
+    float: right;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:  $third_color;
+    padding-inline-start: 0px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  .nav-item{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    text-decoration: none;
+  }
+
+  li a:not(.logo) {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.logo) {
+    background-color: $primary_color;
+  }
+  
+  .active {
+    background-color: $third_color;
+  }
+
